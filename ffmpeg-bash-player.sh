@@ -89,7 +89,8 @@ while true; do
 		echo "---------------------------"  > /tmp/fftime.txt
 		ffprobe -hide_banner "$INU" >> /tmp/fftime.txt 2>&1
 		echo "---------------------------" >> /tmp/fftime.txt
-		MAP1=`cat .map1` ; MAP2=`cat .map2` ; REZ=`cat .rez`
+		echo "ffprobe info written to /tmp/fftime.txt"
+	        MAP1=`cat .map1` ; MAP2=`cat .map2` ; REZ=`cat .rez`
 		echo "Current channels are 0:$MAP1 and 0:$MAP2 Resolution is $REZ"
 		echo -n "Video Channel >"
 		read MAP1
