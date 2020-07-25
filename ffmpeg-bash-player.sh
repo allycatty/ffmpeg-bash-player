@@ -123,7 +123,7 @@ while true; do
                    echo "Resolution changed to $REZ"
                 fi
 		rm .running
-		exec ./ffmpeg-bash-player.shh
+		exec ./ffmpeg-bash-player.sh
                    break;;
         [Ii]* ) \
 		echo -n "ntro"
